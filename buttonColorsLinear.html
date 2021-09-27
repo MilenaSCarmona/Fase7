@@ -1,0 +1,91 @@
+<!doctype html>
+<!-- Autor: Milena dos Santos Carmona -->
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <title>My Code Fase7</title>
+    </head>
+    <body>
+
+    <section id= "secButton">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-format">
+            <h1>Botão com animação na borda</h1>    
+            <!-- Estrutura do botão -->
+            <div class="btn">
+              <a herf="#"><span>Botão</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Esse é o rodapé principal que vai ser usado em todas as páginas do nosso webview -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>Copyright @ 2021 My Code M.S.Carmona.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+    <style>
+      #secButton, footer{
+        color:#ffff;
+        background-color:#1F1F1F;
+      }
+      #secButton{
+        padding: 5rem 0 20rem;
+      }
+      #secButton .text-format h1{
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 3rem;
+        border-bottom: 0.2rem solid #ffff;
+        margin-bottom: 3rem;
+        padding-bottom: 1rem;
+      }
+      #secButton .btn a {
+        height: 3rem;
+        width: 10rem;
+        border-radius: 4rem;
+        display: block;
+        text-align: center;
+        position: relative;
+        background-image: linear-gradient(115deg, red,Orange,yellow,green,red,blue,purple);
+      }
+      #secButton .btn a span {
+        top: 50%;
+        left: 50%;
+        height: 88%;
+        width: 97%;
+        padding: 0.5rem;
+        border-radius: 2rem;
+        display: block;
+        position: absolute;
+        background-color: #1F1F1F;
+        transform: translate(-50%, -50%);
+      }
+      #secButton .btn a:hover {
+        animation: animate 0.4s linear infinite;
+      }
+      @keyframes animate {
+        100%{
+          filter: hue-rotate(-360deg);
+        }
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
